@@ -84,8 +84,8 @@ public class ImageService {
         int screenArea = firstScreenDimension * secondScreenDimension;
 
         int [] arrayWithFirstImageDimension = findFirstDimension(dimensions);
-        int indexForSecondImageDimension = arrayWithFirstScreenDimension[0];
-        int firstImageDimension = arrayWithFirstScreenDimension[1];
+        int indexForSecondImageDimension = arrayWithFirstImageDimension[0];
+        int firstImageDimension = arrayWithFirstImageDimension[1];
         int secondImageDimension = findSecond(indexForSecondScreenDimension, dimensions);
 
         int singleImageArea = firstImageDimension * secondImageDimension;
