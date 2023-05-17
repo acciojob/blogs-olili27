@@ -79,11 +79,11 @@ public class ImageService {
         int [] arrayWithFirstScreenDimension = findFirstDimension(screenDimensions);
         int indexForSecondScreenDimension = arrayWithFirstScreenDimension[0];
         int firstScreenDimension = arrayWithFirstScreenDimension[1];
-        int secondScreenDimension = findSecond(indexForSecondScreenDimension, dimensions);
+        int secondScreenDimension = findSecond(indexForSecondScreenDimension, screenDimensions);
 
         int screenArea = firstScreenDimension * secondScreenDimension;
 
-        int [] arrayWithFirstImageDimension = findFirstDimension(screenDimensions);
+        int [] arrayWithFirstImageDimension = findFirstDimension(dimensions);
         int indexForSecondImageDimension = arrayWithFirstScreenDimension[0];
         int firstImageDimension = arrayWithFirstScreenDimension[1];
         int secondImageDimension = findSecond(indexForSecondScreenDimension, dimensions);
